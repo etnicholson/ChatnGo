@@ -1,0 +1,71 @@
+﻿@page
+@model chat.Pages.ChatModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@section Scripts {
+    <script src="~/js/index.js"></script>
+}
+<br />
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <div id="heading">
+
+
+    </div>
+    <div class="row">
+        <div class="col-md-10" style="padding-right:0px;">
+            <div class="card">
+                <ul id="chatHistory" class="card-body"></ul>
+            </div>
+        </div>
+        <div class="col-md-2" style="padding-left:0px;">
+            <div class="user">
+                <ul id="userList" class="user-body"></ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <form id="chatForm" class="form-inline mt-2">
+                <input id="messageTextbox" type="text" placeholder="Type a message" class="form-control " style="width: 600px;" />
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+@*<div id="chatDialog" title="Chat with support">
+        <div id="chatMainPanel">
+            <ul id="chatHistory"></ul>
+
+    mr-sm-2 flex-grow-1
+            <div id="bottomPanel">
+                <form id="chatForm">
+                    <input id="messageTextbox" type="text" placeholder="Type a message" />
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>*@
